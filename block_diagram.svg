@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="powerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="100%" style="stop-color:#ee5a5a"/>
+    </linearGradient>
+    <linearGradient id="dcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#feca57"/>
+      <stop offset="100%" style="stop-color:#ff9f43"/>
+    </linearGradient>
+    <linearGradient id="regGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48dbfb"/>
+      <stop offset="100%" style="stop-color:#0abde3"/>
+    </linearGradient>
+    <linearGradient id="meterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5f27cd"/>
+      <stop offset="100%" style="stop-color:#341f97"/>
+    </linearGradient>
+    <linearGradient id="senseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1dd1a1"/>
+      <stop offset="100%" style="stop-color:#10ac84"/>
+    </linearGradient>
+    <linearGradient id="memGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9ff3"/>
+      <stop offset="100%" style="stop-color:#f368e0"/>
+    </linearGradient>
+    <linearGradient id="connGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#54a0ff"/>
+      <stop offset="100%" style="stop-color:#2e86de"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">ATM90E26A Evaluation Board - Block Diagram</text>
+
+  <!-- AC Input Block -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="70" width="120" height="80" rx="10" fill="url(#powerGrad)"/>
+    <text x="90" y="100" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">AC INPUT</text>
+    <text x="90" y="118" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11">J1</text>
+    <text x="90" y="136" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10">100-240VAC</text>
+  </g>
+
+  <!-- Varistor -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="170" width="120" height="50" rx="8" fill="#576574"/>
+    <text x="90" y="195" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">RV1 (10D561)</text>
+    <text x="90" y="210" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">Surge Protection</text>
+  </g>
+
+  <!-- HLK-10M12 -->
+  <g filter="url(#shadow)">
+    <rect x="200" y="70" width="140" height="80" rx="10" fill="url(#dcGrad)"/>
+    <text x="270" y="100" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">HLK-10M12</text>
+    <text x="270" y="118" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11">U1</text>
+    <text x="270" y="136" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10">AC/DC 12V 10W</text>
+  </g>
+
+  <!-- MIC5209 -->
+  <g filter="url(#shadow)">
+    <rect x="390" y="70" width="130" height="80" rx="10" fill="url(#regGrad)"/>
+    <text x="455" y="100" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">MIC5209</text>
+    <text x="455" y="118" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11">U3</text>
+    <text x="455" y="136" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10">LDO 3.3V</text>
+  </g>
+
+  <!-- Voltage Sensing -->
+  <g filter="url(#shadow)">
+    <rect x="200" y="180" width="140" height="70" rx="10" fill="url(#senseGrad)"/>
+    <text x="270" y="205" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">VOLTAGE SENSE</text>
+    <text x="270" y="223" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10">R1 (200K) + TR1</text>
+    <text x="270" y="240" text-anchor="middle" fill="#fff" font-family="Arial" font-size="9">ZMPT101K</text>
+  </g>
+
+  <!-- Current Input -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="280" width="120" height="70" rx="10" fill="url(#senseGrad)"/>
+    <text x="90" y="305" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="bold">CURRENT IN</text>
+    <text x="90" y="323" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10">J2</text>
+    <text x="90" y="340" text-anchor="middle" fill="#fff" font-family="Arial" font-size="9">R2, R3 (2.7ohm)</text>
+  </g>
+
+  <!-- ATM90E26 -->
+  <g filter="url(#shadow)">
+    <rect x="390" y="200" width="180" height="120" rx="12" fill="url(#meterGrad)"/>
+    <text x="480" y="235" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14" font-weight="bold">ATM90E26-YU</text>
+    <text x="480" y="255" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12">U2</text>
+    <text x="480" y="275" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="10">Energy Metering IC</text>
+    <text x="480" y="295" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">V, I, P, E Measurement</text>
+    <text x="480" y="310" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">SPI Interface</text>
+  </g>
+
+  <!-- Crystal -->
+  <g filter="url(#shadow)">
+    <rect x="390" y="340" width="100" height="50" rx="8" fill="#576574"/>
+    <text x="440" y="362" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10" font-weight="bold">Y1 Crystal</text>
+    <text x="440" y="378" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">8.192 MHz</text>
+  </g>
+
+  <!-- EEPROM -->
+  <g filter="url(#shadow)">
+    <rect x="510" y="340" width="100" height="50" rx="8" fill="url(#memGrad)"/>
+    <text x="560" y="362" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10" font-weight="bold">24C02C</text>
+    <text x="560" y="378" text-anchor="middle" fill="#fff" font-family="Arial" font-size="9">U4 EEPROM</text>
+  </g>
+
+  <!-- MCU Interface -->
+  <g filter="url(#shadow)">
+    <rect x="630" y="180" width="140" height="160" rx="10" fill="url(#connGrad)"/>
+    <text x="700" y="205" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">MCU INTERFACE</text>
+    <text x="700" y="225" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11">J5 (10-pin)</text>
+    <text x="700" y="250" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">+3.3V, GND</text>
+    <text x="700" y="268" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">ATM_SDI/SDO</text>
+    <text x="700" y="286" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">ATM_CLK/CS</text>
+    <text x="700" y="304" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">ATM_IRQ/CF1</text>
+    <text x="700" y="322" text-anchor="middle" fill="#c8d6e5" font-family="Arial" font-size="9">SCL/SDA</text>
+  </g>
+
+  <!-- Power Rails Box -->
+  <g filter="url(#shadow)">
+    <rect x="560" y="70" width="100" height="80" rx="8" fill="#222f3e" stroke="#48dbfb" stroke-width="2"/>
+    <text x="610" y="95" text-anchor="middle" fill="#48dbfb" font-family="Arial" font-size="11" font-weight="bold">POWER</text>
+    <text x="610" y="115" text-anchor="middle" fill="#ff9f43" font-family="Arial" font-size="10">12V Rail</text>
+    <text x="610" y="135" text-anchor="middle" fill="#48dbfb" font-family="Arial" font-size="10">3.3V Rail</text>
+  </g>
+
+  <!-- Arrows / Connections -->
+  <!-- AC to HLK -->
+  <line x1="150" y1="110" x2="195" y2="110" stroke="#ff6b6b" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <path d="M150,110 L190,110" stroke="#ff6b6b" stroke-width="3"/>
+  <polygon points="200,110 190,105 190,115" fill="#ff6b6b"/>
+
+  <!-- AC to Varistor -->
+  <line x1="90" y1="150" x2="90" y2="165" stroke="#ff6b6b" stroke-width="2"/>
+  <polygon points="90,170 85,162 95,162" fill="#ff6b6b"/>
+
+  <!-- AC to Voltage Sense -->
+  <path d="M150,130 L175,130 L175,200 L195,200" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+  <polygon points="200,200 192,195 192,205" fill="#ff6b6b"/>
+
+  <!-- HLK to MIC5209 -->
+  <line x1="340" y1="110" x2="385" y2="110" stroke="#ff9f43" stroke-width="3"/>
+  <polygon points="390,110 382,105 382,115" fill="#ff9f43"/>
+  <text x="365" y="100" text-anchor="middle" fill="#ff9f43" font-family="Arial" font-size="9">12V</text>
+
+  <!-- MIC5209 to Power Box -->
+  <line x1="520" y1="110" x2="555" y2="110" stroke="#48dbfb" stroke-width="3"/>
+  <polygon points="560,110 552,105 552,115" fill="#48dbfb"/>
+  <text x="540" y="100" text-anchor="middle" fill="#48dbfb" font-family="Arial" font-size="9">3.3V</text>
+
+  <!-- Power to ATM90E26 -->
+  <path d="M610,150 L610,165 L480,165 L480,195" stroke="#48dbfb" stroke-width="2" fill="none"/>
+  <polygon points="480,200 475,192 485,192" fill="#48dbfb"/>
+
+  <!-- Voltage Sense to ATM -->
+  <line x1="340" y1="215" x2="385" y2="250" stroke="#1dd1a1" stroke-width="2"/>
+  <polygon points="390,253 380,250 383,242" fill="#1dd1a1"/>
+  <text x="355" y="225" fill="#1dd1a1" font-family="Arial" font-size="9">VP/VN</text>
+
+  <!-- Current to ATM -->
+  <path d="M150,315 L280,315 L280,280 L385,280" stroke="#1dd1a1" stroke-width="2" fill="none"/>
+  <polygon points="390,280 382,275 382,285" fill="#1dd1a1"/>
+  <text x="280" y="300" fill="#1dd1a1" font-family="Arial" font-size="9">I1P/I1N</text>
+
+  <!-- ATM to MCU -->
+  <line x1="570" y1="260" x2="625" y2="260" stroke="#54a0ff" stroke-width="3"/>
+  <polygon points="630,260 622,255 622,265" fill="#54a0ff"/>
+  <text x="600" y="250" fill="#54a0ff" font-family="Arial" font-size="9">SPI</text>
+
+  <!-- Crystal to ATM -->
+  <line x1="440" y1="340" x2="450" y2="325" stroke="#576574" stroke-width="2"/>
+
+  <!-- EEPROM to ATM -->
+  <line x1="560" y1="340" x2="520" y2="325" stroke="#f368e0" stroke-width="2"/>
+  <text x="545" y="332" fill="#f368e0" font-family="Arial" font-size="8">I2C</text>
+
+  <!-- Legend -->
+  <rect x="30" y="420" width="740" height="70" rx="8" fill="#222f3e" opacity="0.8"/>
+  <text x="50" y="445" fill="#ffffff" font-family="Arial" font-size="11" font-weight="bold">Legend:</text>
+
+  <rect x="120" y="432" width="15" height="15" fill="url(#powerGrad)"/>
+  <text x="140" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">AC Power</text>
+
+  <rect x="210" y="432" width="15" height="15" fill="url(#dcGrad)"/>
+  <text x="230" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">DC Conversion</text>
+
+  <rect x="330" y="432" width="15" height="15" fill="url(#regGrad)"/>
+  <text x="350" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">Regulation</text>
+
+  <rect x="430" y="432" width="15" height="15" fill="url(#meterGrad)"/>
+  <text x="450" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">Metering</text>
+
+  <rect x="520" y="432" width="15" height="15" fill="url(#senseGrad)"/>
+  <text x="540" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">Sensing</text>
+
+  <rect x="610" y="432" width="15" height="15" fill="url(#connGrad)"/>
+  <text x="630" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">Interface</text>
+
+  <rect x="700" y="432" width="15" height="15" fill="url(#memGrad)"/>
+  <text x="720" y="444" fill="#c8d6e5" font-family="Arial" font-size="10">Memory</text>
+
+  <text x="400" y="475" text-anchor="middle" fill="#576574" font-family="Arial" font-size="10">ATM90E26A Energy Metering Evaluation Board</text>
+</svg>

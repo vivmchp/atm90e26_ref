@@ -17,23 +17,7 @@ KiCad 10.0 design for a single-phase energy metering evaluation board based on t
 
 ## Block Diagram
 
-```
-AC Input (100-240V)
-       │
-       ├──► HLK-10M12 ──► 12V ──► MIC5209 ──► 3.3V
-       │
-       ├──► R1 (200K) ──► ZMPT101K ──► VP/VN ──► ATM90E26 (Voltage)
-       │
-       └──► RV1 (Varistor) ──► Surge Protection
-
-Current Input (J2)
-       │
-       └──► R2/R3 ──► I1P/I1N ──► ATM90E26 (Current)
-
-ATM90E26 ──► SPI/IRQ/CF1 ──► J5 (MCU Interface)
-    │
-    └──► I2C ──► 24C02C (EEPROM)
-```
+![Block Diagram](block_diagram.svg)
 
 ## Connectors
 
