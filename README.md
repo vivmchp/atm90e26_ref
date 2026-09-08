@@ -75,6 +75,24 @@ KiCad 10.0 design for a single-phase energy metering evaluation board based on t
 | R1 | Resistor | 200K/3W | Axial |
 | C13, C14 | Capacitor | 12pF | 0603 |
 
+## Manufacturing Files
+
+Gerber files for PCB fabrication are in `ATM90E26_EVAL/output/`:
+
+| File | Description |
+|------|-------------|
+| *-F_Cu.gbr | Front copper layer |
+| *-B_Cu.gbr | Back copper layer |
+| *-F_Mask.gbr | Front solder mask |
+| *-B_Mask.gbr | Back solder mask |
+| *-F_Paste.gbr | Front solder paste |
+| *-B_Paste.gbr | Back solder paste |
+| *-F_Silkscreen.gbr | Front silkscreen |
+| *-B_Silkscreen.gbr | Back silkscreen |
+| *-Edge_Cuts.gbr | Board outline |
+| *-PTH.drl | Plated through holes |
+| *-NPTH.drl | Non-plated holes |
+
 ## Requirements
 
 - KiCad 10.0 or later
