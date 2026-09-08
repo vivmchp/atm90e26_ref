@@ -2,7 +2,9 @@
 
 KiCad 10.0 design for a single-phase energy metering evaluation board based on the Microchip ATM90E26A IC.
 
-![Board 3D View](board_3d.png)
+| Front | Back |
+|:-----:|:----:|
+| ![Board 3D Front](board_3d.png) | ![Board 3D Back](BOARD_3D_BACK.png) |
 
 ## Features
 
