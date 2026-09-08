@@ -18,7 +18,7 @@ KiCad 10.0 design for a single-phase energy metering evaluation board based on t
 | `symbols/ul_MIC5209-3-3YS-TR/` | Custom symbol and footprint for LDO regulator |
 | `ZMPT101B.pdf` | Voltage transformer reference datasheet |
 
-## MCU Interface (J1)
+## MCU Interface (J5)
 
 | Pin | Signal | Description |
 |-----|--------|-------------|

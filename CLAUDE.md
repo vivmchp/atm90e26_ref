@@ -25,7 +25,7 @@ ATM90E26_Test/
 - **ATM90E26-YU**: Main energy metering IC (SSOP-28)
 - **ZMPT101K**: Voltage transformer (1000:1000, 2mA:2mA) for AC voltage sensing
 - **MIC5209-3.3YS-TR**: 3.3V LDO voltage regulator
-- **J1 (10-pin header)**: MCU interface for SPI communication
+- **J5 (10-pin header)**: MCU interface for SPI communication
 
 ## Design Rules
 
