@@ -1,0 +1,17 @@
+# KiCad lock files
+~*.lck
+
+# KiCad local history (automatic backups)
+.history/
+
+# KiCad backup files
+*.kicad_*-bak
+*-backups/
+
+# Gerber output (regenerate from source)
+*-gerbers/
+*.gbr
+*.drl
+
+# Other generated files
+fp-info-cache
