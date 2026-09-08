@@ -8,10 +8,9 @@
 *.kicad_*-bak
 *-backups/
 
-# Gerber output (regenerate from source)
-*-gerbers/
-*.gbr
-*.drl
+# Gerber files in project folder (keep output/ folder)
+ATM90E26_EVAL/ATM90E26_EVAL/*.gbr
+ATM90E26_EVAL/ATM90E26_EVAL/*.drl
 
 # Other generated files
 fp-info-cache
