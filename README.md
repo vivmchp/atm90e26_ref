@@ -2,6 +2,8 @@
 
 KiCad 10.0 design for a single-phase energy metering evaluation board based on the Microchip ATM90E26A IC.
 
+![Board 3D View](board_3d.png)
+
 ## Features
 
 - **ATM90E26A** high-precision energy metering IC (SSOP-28)
