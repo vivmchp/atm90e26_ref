@@ -22,16 +22,16 @@ KiCad 10.0 design for a single-phase energy metering evaluation board based on t
 
 | Pin | Signal | Description |
 |-----|--------|-------------|
-| 1 | VCC | 3.3V power |
+| 1 | +3.3V | 3.3V power |
 | 2 | GND | Ground |
-| 3 | MISO | SPI data out |
-| 4 | MOSI | SPI data in |
-| 5 | SCLK | SPI clock |
-| 6 | CS | Chip select (active low) |
-| 7 | IRQ0 | Interrupt 0 |
-| 8 | IRQ1 | Interrupt 1 |
-| 9 | CF1 | Energy pulse output 1 |
-| 10 | CF2 | Energy pulse output 2 |
+| 3 | ATM_SDI | SPI data in (MOSI to ATM90E26) |
+| 4 | ATM_SDO | SPI data out (MISO from ATM90E26) |
+| 5 | ATM_CLK | SPI clock |
+| 6 | ATM_CS | Chip select (active low) |
+| 7 | ATM_IRQ | Interrupt output |
+| 8 | ATM_CF1 | Energy pulse output |
+| 9 | SCL | I2C clock (for EEPROM) |
+| 10 | SDA | I2C data (for EEPROM) |
 
 ## Design Rules
 
