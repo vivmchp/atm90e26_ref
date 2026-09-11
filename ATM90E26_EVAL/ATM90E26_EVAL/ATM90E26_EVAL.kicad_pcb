@@ -122,9 +122,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "../output/")
 		)
 	)
 	(footprint "Crystal:Crystal_HC49-U_Vertical"
@@ -9376,7 +9376,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J3"
-			(at -3.3 0.8 0)
+			(at -2.8 1.3 0)
 			(layer "F.SilkS")
 			(uuid "56dae693-1a66-4409-8f1a-759322d28ca9")
 			(effects
@@ -9647,6 +9647,217 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "80cd749f-f18e-4876-bd02-5b83869fe275")
+	)
+	(gr_text "CS"
+		(at 151.7 115.2 0)
+		(layer "B.SilkS")
+		(uuid "89097139-30d1-4ddf-b05e-2d6b19af4aa6")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.0625)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "3.3V"
+		(at 139.1 115.2 0)
+		(layer "B.SilkS")
+		(uuid "dcad2806-3ca8-4a8d-a91f-95f8e234bb9b")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GND"
+		(at 142 115.2 0)
+		(layer "B.SilkS")
+		(uuid "cef27f3a-52e2-424f-9850-30b50bc6a5f0")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "SDI"
+		(at 144.4 115.2 0)
+		(layer "B.SilkS")
+		(uuid "bc451b48-4cad-4d03-9ddd-0f7f17363163")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "SDO"
+		(at 147 115.2 0)
+		(layer "B.SilkS")
+		(uuid "9a0c8391-8bab-421c-966b-11e1bc8fb9af")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "CLK"
+		(at 149.5 115.2 0)
+		(layer "B.SilkS")
+		(uuid "81c254ac-c4d0-435f-ab0a-b9ee2ae082cb")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "IRQ"
+		(at 154.5 115.1 0)
+		(layer "B.SilkS")
+		(uuid "24e564ed-ef09-4281-9b99-8fb57a36a1d9")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "CF1"
+		(at 157.1 115.1 0)
+		(layer "B.SilkS")
+		(uuid "7707b292-53bb-426f-8f7b-d251113b6293")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "SCL"
+		(at 159.6 115.1 0)
+		(layer "B.SilkS")
+		(uuid "3664edb0-9f60-48bb-a1ea-6cc9938536ac")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "SDA"
+		(at 162.6 115.1 0)
+		(layer "B.SilkS")
+		(uuid "2a7064c7-3d4e-42db-81ad-1e9f28a1fef4")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.09375)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "L"
+		(at 103.9 54.4 0)
+		(layer "B.SilkS")
+		(uuid "5bc105fb-48d0-42fa-87bc-91ef027807d2")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "N"
+		(at 104 59.3 0)
+		(layer "B.SilkS")
+		(uuid "073e3ccc-3428-424e-ba5c-616cb5e3306f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "VIVI"
+		(at 161.8 113 0)
+		(layer "B.SilkS")
+		(uuid "d3e62c74-69b0-4aaa-b763-28398b06db61")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "3.3V"
+		(at 174.7 99.8 0)
+		(layer "B.SilkS")
+		(uuid "c7cf8991-682c-4016-82cc-fd04540c827b")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "12V"
+		(at 174.8 91.8 0)
+		(layer "B.SilkS")
+		(uuid "145645f7-a499-43a2-92aa-4a73e3220da0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GND"
+		(at 174.8 102.6 0)
+		(layer "B.SilkS")
+		(uuid "63987efe-9969-4a1a-b8c6-3b7ac4deadf5")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GND"
+		(at 174.9 95.2 0)
+		(layer "B.SilkS")
+		(uuid "cb507541-ee91-4f81-8657-56f91332fa76")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(segment
 		(start 165.25 106.2)
@@ -13143,20 +13354,14 @@
 		(hatch edge 0.5)
 		(priority 1)
 		(connect_pads
-			(clearance 0.5)
+			(clearance 0.35)
 		)
 		(min_thickness 0.25)
 		(fill yes
-			(mode hatch)
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
 			(smoothing chamfer)
 			(island_removal_mode 0)
-			(hatch_thickness 1)
-			(hatch_gap 1.5)
-			(hatch_orientation 0)
-			(hatch_border_algorithm hatch_thickness)
-			(hatch_min_hole_area 0.15)
 		)
 		(polygon
 			(pts
@@ -15114,20 +15319,14 @@
 		(uuid "9ff3cddb-e396-43a2-b814-a8db39df4414")
 		(hatch edge 0.5)
 		(connect_pads
-			(clearance 0.5)
+			(clearance 0.35)
 		)
 		(min_thickness 0.25)
 		(fill yes
-			(mode hatch)
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
 			(smoothing chamfer)
 			(island_removal_mode 0)
-			(hatch_thickness 1)
-			(hatch_gap 1.5)
-			(hatch_orientation 0)
-			(hatch_border_algorithm hatch_thickness)
-			(hatch_min_hole_area 0.15)
 		)
 		(polygon
 			(pts
